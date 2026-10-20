@@ -49,7 +49,7 @@ body {
     filter: brightness(0) invert(1);
 }
 
-/* UNRUK LOGO */
+
 .logo {
     width: 50px;
     height: 50px;
@@ -694,5 +694,78 @@ body {
 
     .contact form {
         padding: 20px;
+    }
+}
+
+/* ACTIVE MENU */
+
+.navbar .nav-link.active {
+    color: #D9A441 !important;
+    position: relative;
+}
+
+.navbar .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    height: 2px;
+    background-color: #D9A441;
+    border-radius: 2px;
+}
+
+
+#home,
+#services,
+#about,
+#contact {
+    scroll-margin-top: 90px;
+}
+
+/* ========================================
+   CHART.JS untuk ABOUT
+======================================== */
+
+.about-chart {
+    max-width: 900px;
+    margin: 55px auto 0;
+    padding: 28px;
+    color: white;
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-radius: 12px;
+}
+
+.about-chart h3 {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.about-chart p {
+    color: #bbbbbb;
+    font-size: 14px;
+}
+
+.about-chart .chart-container {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    margin-top: 24px;
+}
+
+@media (max-width: 576px) {
+    .about-chart {
+        padding: 18px;
+        margin-top: 35px;
+    }
+
+    .about-chart h3 {
+        font-size: 20px;
+    }
+
+    .about-chart .chart-container {
+        height: 260px;
     }
 }
